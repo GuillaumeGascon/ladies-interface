@@ -1,0 +1,192 @@
+<div class="home-page-container">
+  <div class="background-container"></div>
+  <main class="page-container">
+    <nav>
+      <div class="logo-container">
+        <img src="./assets/logo.svg"/>
+      </div>
+      <div class="right">
+        <div class="form-item">
+          <input
+          type="search"
+          id="search"
+          placeholder="Search"/>
+          <button>
+            <img src="./assets/search.svg"/>
+          </button>
+        </div>
+        <button
+          class="transparent">
+          <img src="./assets/cart.svg"/>
+        </button>
+        <button
+          class="menu">
+          <img src="./assets/menu.svg"/>
+        </button>
+      </div>
+    </nav>
+    <section class="content-section">
+      <div class="left">
+        <div class="top-container">
+          <div class="title-container">
+            <h1>Best Sellers</h1>
+            <button>
+              <img src="./assets/filter.svg"/>
+            </button>
+          </div>
+          <div class="button-container">
+            <button>
+              <img src="./assets/left.svg"/>
+            </button>
+            <button>
+              <img src="./assets/right.svg"/>
+            </button>
+          </div>
+        </div>
+        <swiper
+          class="main-swiper"
+          [config]="mainSwiperConfig">
+          <ng-template swiperSlide>
+            <div class="card">
+              <div class="picture-container"></div>
+              <div class="info-container">
+                <h2>Title</h2>
+                <p>Description</p>
+                <div class="action-container">
+                  <p>text</p>
+                  <button>
+                    <img src="./assets/add.svg"/>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="card">
+              <div class="picture-container"></div>
+              <div class="info-container">
+                <h2>Title</h2>
+                <p>Description</p>
+                <div class="action-container">
+                  <p>text</p>
+                  <button>
+                    <img src="./assets/add.svg"/>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="card">
+              <div class="picture-container"></div>
+              <div class="info-container">
+                <h2>Title</h2>
+                <p>Description</p>
+                <div class="action-container">
+                  <p>text</p>
+                  <button>
+                    <img src="./assets/add.svg"/>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="card">
+              <div class="picture-container"></div>
+              <div class="info-container">
+                <h2>Title</h2>
+                <p>Description</p>
+                <div class="action-container">
+                  <p>text</p>
+                  <button>
+                    <img src="./assets/add.svg"/>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="card">
+              <div class="picture-container"></div>
+              <div class="info-container">
+                <h2>Title</h2>
+                <p>Description</p>
+                <div class="action-container">
+                  <p>text</p>
+                  <button>
+                    <img src="./assets/add.svg"/>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+      <div class="right">
+        <div class="top-container">
+          <h3>Accessories</h3>
+        </div>
+        <swiper
+          class="second-swiper"
+          [config]="secondSwiperConfig">
+          <ng-template swiperSlide>
+            <div class="item">
+              <div class="image-container">
+
+              </div>
+              <div class="info-container">
+                <h4>Title</h4>
+                <p>Decription</p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="item">
+              <div class="image-container">
+
+              </div>
+              <div class="info-container">
+                <h4>Title</h4>
+                <p>Decription</p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="item">
+              <div class="image-container">
+
+              </div>
+              <div class="info-container">
+                <h4>Title</h4>
+                <p>Decription</p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="item">
+              <div class="image-container">
+
+              </div>
+              <div class="info-container">
+                <h4>Title</h4>
+                <p>Decription</p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="item">
+              <div class="image-container">
+
+              </div>
+              <div class="info-container">
+                <h4>Title</h4>
+                <p>Decription</p>
+              </div>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </section>
+  </main>
+</div>

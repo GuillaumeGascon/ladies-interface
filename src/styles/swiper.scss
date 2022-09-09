@@ -1,0 +1,82 @@
+swiper {
+  display: flex;
+  align-items: center;
+  &.main-swiper {
+    .swiper-wrapper {
+      > .swiper-slide-active {
+        .card {
+          .info-container {
+            transition: background .2s ease-in-out;
+            background: var(--primary) !important;
+            h2 {
+              transition: color .2s ease-in-out;
+              color: white !important;
+            }
+            > p {
+              transition: color .2s ease-in-out;
+              color: var(--primary-tint) !important;
+            }
+            .action-container {
+              p {
+                color: white !important;
+              }
+              button {
+                transition: background .2s ease-in-out;
+                background: var(--primary-shade) !important;
+                &:hover, &:active {
+                  background: var(--primary-gray) !important;
+                }
+                &:focus {
+                  background: var(--primary-tint) !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.second-swiper {
+    flex-direction: column;
+    .swiper-wrapper {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      height: 188px;
+      .swiper-slide {
+        width: 100% !important;
+        height: 100% !important;
+        display: flex;
+        justify-content: flex-end;
+      }
+      > .swiper-slide-active {
+        .item {
+          transition: all .2s ease-in-out;
+          width: 100% !important;
+          border: none;
+          background: var(--primary);
+          .image-container {
+            background: var(--primary-tint);
+          }
+          .info-container {
+            h4 {
+              transition: color .2s ease-in-out;
+              color: white !important;
+            }
+            p {
+              transition: color .2s ease-in-out;
+              color: white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    > .swiper-slide {
+      width: auto !important;
+    }
+  }
+}
